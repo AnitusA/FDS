@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Drive File</title>
+    <style>
+      :root{ --bg:#f5f7fb; --card:#ffffff; --accent:#1a73e8; --text:#111827 }
+      html,body{height:100%}
+      body{
+        margin:0; font-family:Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text);
+        display:flex; align-items:center; justify-content:center;
+      }
+      .card{
+        background:var(--card); padding:32px; border-radius:12px; box-shadow:0 6px 20px rgba(16,24,40,0.08);
+        text-align:center; width:min(520px,94%);
+      }
+      h1{ margin:0 0 12px; font-size:20px }
+      p{ color:#475569; margin:0 0 20px }
+      .btn{
+        display:inline-block; background:var(--accent); color:#fff; padding:12px 20px; border-radius:8px; text-decoration:none;
+        font-weight:600; box-shadow:0 6px 14px rgba(26,115,232,0.18);
+      }
+      .btn:active{ transform:translateY(1px) }
+      .note{ margin-top:14px; font-size:13px; color:#94a3b8 }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Open shared Drive file</h1>
+      <p>Click the button below to open the Google Drive file in a new tab.</p>
+      <a class="btn" id="openLink" href="https://drive.google.com/file/d/1LTmgmh8SFpTbQx4P6hj0OyvsEp_-Y2-6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open file</a>
+      <div class="note">If the file requires permission, sign in to the Google account that has access.</div>
+    </div>
+  </body>
+</html>
